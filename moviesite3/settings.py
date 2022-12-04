@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'staticpages.apps.StaticpagesConfig',
     'whitenoise.runserver_nostatic', 
+    'movies.apps.MoviesConfig',
 
 ]
 
