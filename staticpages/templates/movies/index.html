@@ -1,35 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+{% extends 'base.html' %}
 
-{% load static %}
+{% block title %}
+Página Inicial
+{% endblock title %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
-</head>
-
-<body>
-    <header id="cabecalho-principal">
-        <a href="{% url 'index' %}"> <img src="{% static 'logo.svg' %}"> </a> 
-        <nav id="navegacao-principal">
-            <ul>
-                <li><a href="{% url 'about' %}">Sobre</a></li>
-            </ul>
-        </nav>
-
-    </header>
-    <main id="conteiner-principal">
-        <h1><i>Watch that film!</i></h1>
-        <p>A Página para Comunidade Resenhadora de Filmes</p>
-    </main>
-    <footer id="rodape-principal">
-        <p>
-            <small>Copyright 2021</small>
-        </p>
-    </footer>
-</body>
-
-</html>
+{% block content %}
+<h1><i>Watch that film!</i></h1>
+<p>A Página para Comunidade Resenhadora de Filmes</p>
+{% endblock content %}
